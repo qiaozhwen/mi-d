@@ -8,11 +8,10 @@ export default defineConfig({
     { path: '/', component: '@/pages/index', redirect: '/app' },
     {
       path: '/app ',
-      component: '@/pages/index',
+      component: '@/pages/app/home',
       routes: [
-        { path: '/app/dash-bord', component: '@/pages/index' },
-        { path: '/app/detail', component: '@/pages/index' },
-        { path: '/app/test', component: '@/pages/index' },
+        { path: '/app/dash-bord', component: '@/pages/app/dashboard' },
+        { path: '/app/detail', component: '@/pages/app/detail' },
       ],
     },
     { path: '/login', component: '@/pages/login' },

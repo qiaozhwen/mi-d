@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './Home.css';
 import { Menu } from 'antd';
-import checkUser from '../api/getUser';
+import checkUser from '../../api/getUser';
 import sideBars from '../utils/sideBarConfig';
 import SideBar from '../component/SideBar';
 import Header from '../component/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AppRouter from '../router/AppRouter';
+// import AppRouter from '../router/AppRouter';
 import { withRouter } from 'react-router-dom';
 import Auth from '../component/Auth';
 
@@ -35,7 +35,7 @@ class Home extends Component<any, any> {
           </div>
           <div style={{ flex: 1 }}>
             <Header />
-            <AppRouter />
+            {/*<AppRouter />*/}
           </div>
         </div>
       </Auth>
